@@ -19,9 +19,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          229,
-          229,
-          229
+          0,
+          0,
+          0
         ],
         "specular_color": [
           128,
@@ -52,9 +52,9 @@ let gui_presets = {
           15.083363850911455
         ],
         "background_color": [
-          152.5,
-          134.62920684990445,
-          76.54912911209405
+          0,
+          0,
+          0
         ],
         "specular_color": [
           12.5,
@@ -85,9 +85,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          81.46489021274867,
-          175,
-          61.42165240119485
+	  0,
+          0,
+          0
         ],
         "specular_color": [
           128,
@@ -118,9 +118,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          184.98049866919425,
-          209.25782305971563,
-          222.5
+	  0,
+          0,
+          0
         ],
         "specular_color": [
           128,
@@ -151,9 +151,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          212.5,
-          206.47059421913298,
-          110.00010172526044
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -184,9 +184,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          110.00010172526044,
-          200.44118843826598,
-          212.5
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -217,9 +217,9 @@ let gui_presets = {
           10
         ],
         "background_color": [
-          152.5,
-          81.01682739961791,
-          76.54912911209404
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           0,
@@ -250,9 +250,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          222.5,
-          222.5,
-          222.5
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -282,9 +282,9 @@ let gui_presets = {
           102.5
         ],
         "background_color": [
-          225.17908538501567,
-          232.5,
-          191.01481718175552
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -314,9 +314,9 @@ let gui_presets = {
           177.5
         ],
         "background_color": [
-          142.54421458524817,
-          202.5,
-          142.54421458524817
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -346,9 +346,9 @@ let gui_presets = {
           220
         ],
         "background_color": [
-          8.117729635799641,
-          133.82181873783514,
-          172.5
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -378,9 +378,9 @@ let gui_presets = {
           156.55799839323373
         ],
         "background_color": [
-          38.710847742417265,
-          121.46598208734324,
-          132.49999999999997
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -410,9 +410,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          22.335642954332464,
-          24.9,
-          13.676482555912987
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -442,9 +442,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          227.49,
-          227.49,
-          227.49999999999997
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -474,9 +474,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          255,
-          214.5001220703125,
-          214.5001220703125
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -506,9 +506,9 @@ let gui_presets = {
           0
         ],
         "background_color": [
-          61.42165240119485,
-          175,
-          134.9135243768923
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -538,9 +538,9 @@ let gui_presets = {
           5.691187241498163
         ],
         "background_color": [
-          148.27568291792815,
-          175,
-          61.42165240119485
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -570,9 +570,9 @@ let gui_presets = {
           5.470599006204045
         ],
         "background_color": [
-          175,
-          61.42165240119485,
-          61.42165240119485
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,
@@ -602,9 +602,9 @@ let gui_presets = {
           92.50000000000001
         ],
         "background_color": [
-          142.5,
-          142.5,
-          142.5
+	  0,
+	  0,
+	  0
         ],
         "specular_color": [
           128,

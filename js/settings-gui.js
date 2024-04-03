@@ -14,7 +14,7 @@ function Settings()
   Settings.simulation_iterations_per_frame = 4;
   Settings.environment_noise_scale = 250;
   Settings.update_environment = createEnvironment;
-  Settings.background_color = [229, 229, 229];
+  Settings.background_color = [0, 0, 0];
   Settings.substance_image = 'textures/havre.jpg';
   Settings.substance_color = [50, 158, 168];
   Settings.specular_color = [128, 128, 128];
