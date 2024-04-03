@@ -12,6 +12,7 @@ let gui_presets = {
         "anisotropy": 0.8,
         "environment_noise_scale": 250,
         "separate_fields": false,
+	"substance_image": 'textures/havre.jpg',
         "substance_color": [
           168,
           0,
@@ -44,6 +45,7 @@ let gui_presets = {
         "anisotropy": 0.9,
         "environment_noise_scale": 700,
         "separate_fields": true,
+	"substance_image": 'textures/bus.jpg',
         "substance_color": [
           42.5,
           34.436283485562186,
@@ -76,6 +78,7 @@ let gui_presets = {
         "anisotropy": 0.8,
         "environment_noise_scale": 250,
         "separate_fields": false,
+	"substance_image": 'textures/centre.jpg',
         "substance_color": [
           0,
           0,
@@ -108,6 +111,7 @@ let gui_presets = {
         "anisotropy": 0.5,
         "environment_noise_scale": 250,
         "separate_fields": false,
+	"substance_image": 'textures/quai.jpg',
         "substance_color": [
           0,
           0,
@@ -140,6 +144,7 @@ let gui_presets = {
         "anisotropy": 0.5,
         "environment_noise_scale": 250,
         "separate_fields": false,
+	"substance_image": 'textures/magasin.jpg',
         "substance_color": [
           0,
           0,
@@ -172,6 +177,7 @@ let gui_presets = {
         "anisotropy": 0.9,
         "environment_noise_scale": 250,
         "separate_fields": false,
+	"substance_image": 'textures/parking.jpg',
         "substance_color": [
           0,
           0,
@@ -204,6 +210,7 @@ let gui_presets = {
         "anisotropy": 0.9,
         "environment_noise_scale": 500,
         "separate_fields": true,
+	"substance_image": 'textures/accident.jpeg',
         "substance_color": [
           10,
           10,
@@ -236,6 +243,7 @@ let gui_presets = {
         "anisotropy": 0.1,
         "environment_noise_scale": 250,
         "separate_fields": false,
+	"substance_image": 'textures/usine.jpg',
         "substance_color": [
           0,
           0,

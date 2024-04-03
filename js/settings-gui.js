@@ -15,6 +15,7 @@ function Settings()
   Settings.environment_noise_scale = 250;
   Settings.update_environment = createEnvironment;
   Settings.background_color = [229, 229, 229];
+  Settings.substance_image = 'textures/havre.jpg';
   Settings.substance_color = [50, 158, 168];
   Settings.specular_color = [128, 128, 128];
   Settings.shininess = 64.0;
@@ -109,6 +110,20 @@ function Settings()
   environment_folder.add(Settings, 'update_environment').name('Update');
 
   let render_folder = gui.addFolder('Render Settings')
+
+  render_folder.add(Settings, 'substance_image').onChange(() => {
+    new THREE.TextureLoader().load(
+    Settings.substance_image,
+    function ( texture ) {
+	material.uniforms.texture.value = texture;
+    },
+    function ( xhr ) {
+    },
+    function ( xhr ) {
+        console.log(xhr);
+    }
+  );
+  }).name("Image");
 
   render_folder.addColor(Settings, 'substance_color').onChange(() => {
     material.uniforms.substance_color.value.fromArray(Settings.substance_color).divideScalar(255);

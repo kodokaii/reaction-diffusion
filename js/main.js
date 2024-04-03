@@ -26,11 +26,12 @@ let light_move = false;
 let brush_move = false;
 
 let material = new THREE.ShaderMaterial
-({ 
+({
   vertexShader: render_vertex,
   fragmentShader: render_fragment,
-  uniforms: { 
-    "reaction_diffusion": { value: null }, 
+  uniforms: {
+    "texture": { value: new THREE.TextureLoader().load(Settings.substance_image) },
+    "reaction_diffusion": { value: null },
     "light_pos": { value: new THREE.Vector3(light_pos.x, light_pos.y, Settings.light_height) },
     "substance_color": { value: new THREE.Vector3().fromArray(Settings.substance_color).divideScalar(255) },
     "background_color": { value: new THREE.Vector3().fromArray(Settings.background_color).divideScalar(255) },
@@ -43,6 +44,7 @@ let material = new THREE.ShaderMaterial
     simulation_resolution: 'vec2(' + simulation_width + ', ' + simulation_height + ')'
   }
 });
+
 scene.add(new THREE.Mesh(new THREE.PlaneBufferGeometry(2, 2), material));
 
 let gpu_compute = new THREE.GPUComputationRenderer(simulation_width, simulation_height, renderer);
@@ -50,7 +52,7 @@ let gpu_compute = new THREE.GPUComputationRenderer(simulation_width, simulation_
 let reaction_diffusion = gpu_compute.createTexture();
 
 let reaction_diffusion_variable = gpu_compute.addVariable(
-  "reaction_diffusion", 
+  "reaction_diffusion",
   reaction_diffusion_fragment,
   reaction_diffusion
 );
@@ -82,7 +84,7 @@ createEnvironment();
 
 gpu_compute.init();
 
-function animate() 
+function animate()
 {
   requestAnimationFrame(animate);
   render();
@@ -117,11 +119,11 @@ function simulateReactionDiffusion(iterations)
 
 function updateLightPosition(pos)
 {
-  pos.x = (pos.x - light_half_dim <= 0) ? light_half_dim : 
+  pos.x = (pos.x - light_half_dim <= 0) ? light_half_dim :
          ((pos.x + light_half_dim >= width) ? width - light_half_dim : pos.x);
 
   pos.y = (pos.y - light_half_dim <= 0) ? light_half_dim :
-         ((pos.y + light_half_dim >= height) ? height - light_half_dim : pos.y); 
+         ((pos.y + light_half_dim >= height) ? height - light_half_dim : pos.y);
 
   light_pos = pos;
   light_element.style.top = height - pos.y - light_half_dim + "px";
@@ -163,8 +165,8 @@ function createEnvironment(update = true)
     }
   }
 
-  reaction_diffusion_uniforms['environment'] = { 
-    value: new THREE.DataTexture(pixels, simulation_width, simulation_height, THREE.RGBAFormat, THREE.FloatType) 
+  reaction_diffusion_uniforms['environment'] = {
+    value: new THREE.DataTexture(pixels, simulation_width, simulation_height, THREE.RGBAFormat, THREE.FloatType)
   };
 
   reaction_diffusion_uniforms.environment.value.magFilter = THREE.LinearFilter;

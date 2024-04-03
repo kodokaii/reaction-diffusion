@@ -41,7 +41,7 @@ function onDown()
   }
 }
 
-function touchStart(event) 
+function touchStart(event)
 {
   if(event.touches.length == 1)
   {
@@ -58,7 +58,7 @@ function touchMove(event)
   }
 }
 
-function touchEnd(event) 
+function touchEnd(event)
 {
   if(event.touches.length == 0)
   {
